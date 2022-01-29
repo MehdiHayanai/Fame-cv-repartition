@@ -104,11 +104,13 @@ def main():
     make_folders(all_entreprises)
     df = make_valid_df("""KEY""")
     i = 0
-    names = []
     for index, row in df.iterrows():
-        i += 1
-        copy_cv(row["name"], row["resume_url"], row["entreprises"])
-        names.append(row["name"])
+        try:
+            i += 1
+            copy_cv(row["name"], row["resume_url"], row["entreprises"])
+            names.append(row["name"])
+        except :
+            print("failed to add copy")
     print("users added : {}".format(i))
 
 
