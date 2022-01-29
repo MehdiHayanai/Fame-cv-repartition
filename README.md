@@ -2,9 +2,10 @@
 
 ## Forum Arts & Métiers Entreprises
 
-Fame cv repartition is a program used to distribute resumes, submissions are pulled from a Django database and processed
+Fame cv repartition is a program used to distribute resumes, submissions are pulled from MongoDB and processed
 using pandas.
 At the end each CV is copied into the selected folders.
+
 Available companies:
 
 - LE PISTON
